@@ -4,7 +4,7 @@ import libary.book.Book;
 
 public class Student{
     public  String Stdname;
-    public String RollNmber;
+    public String RollNumber;
     public int count=0;
 
     Book[] borrowedbooks = new Book[3];
@@ -15,7 +15,7 @@ public class Student{
         this.Stdname = input.nextLine();
 
         System.out.println("Enter the student rollnumber");
-        this.RollNmber = input.nextLine();
+        this.RollNumber = input.nextLine();
      }
     
 }
