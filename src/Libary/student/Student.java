@@ -7,7 +7,7 @@ public class Student{
     public String RollNumber;
     public int count=0;
 
-    Book[] borrowedbooks = new Book[3];
+   public Book[] borrowedbooks = new Book[3];
   Scanner input =  new Scanner(System.in);
      public Student(){
            
