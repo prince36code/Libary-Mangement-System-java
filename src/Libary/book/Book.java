@@ -1,17 +1,17 @@
 package libary.book;
 import java.util.Scanner;
 public class Book{
-    private String title;
-    private String author;  
-    private int SerialNumber;
-    private int BookcopyQty;
+    public String title;
+    public String author;  
+    public String SerialNumber;
+    public int BookcopyQty;
 
     Scanner input = new Scanner(System.in);
 
     public Book(){
        
         System.out.println("Enter the serial number");
-        this.SerialNumber = input.nextInt();
+        this.SerialNumber = input.nextLine();
 
         System.out.println("Enter the title of the book");
         this.title = input.nextLine();
