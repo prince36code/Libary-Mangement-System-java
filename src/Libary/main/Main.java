@@ -25,6 +25,7 @@ public class Main{
          switch(choice){
             case 0:
                 System.out.println("Thank you for using Prince's libary Sytem");
+                break;
             case 1:
                 Book b = new Book();
                 ob.Addbook(b);
@@ -36,14 +37,20 @@ public class Main{
                 System.out.println("Press 1 to Search with Book Serial number");
                 System.out.println("Press 2 to Search with author name");
                 searchChoice = input.nextInt();
+
                 switch(searchChoice){
-                    case 1:
-                        ob.searchBySerialnumber();
-                        break;
-                    case 2:
-                        ob.SearchbyAuthorName();
-                        break;
+            case 1:
+                ob.searchBySerialnumber();
+                break;
+            case 2:
+                ob.SearchbyAuthorName();
+                break;
+                
+              default:
+                System.out.println("Invalid choice");
+                break;
                 }
+                break;
             case 4:
                 ob.getAllBooks();
                 break;
@@ -58,7 +65,7 @@ public class Main{
                 std.checkOutBook(ob);
                 break;
             case 8:
-                std.checkInBook();
+                std.checkInBook(ob);
                 break;
             default:
                 System.out.println("Enter a valid choice 0-8");
@@ -66,6 +73,6 @@ public class Main{
 
          }
        }while(choice !=0);
-
+       input.close();
     }
 }
