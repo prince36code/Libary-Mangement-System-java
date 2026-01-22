@@ -1,0 +1,12 @@
+{
+    "java.project.sourcePaths": [
+        "book",
+        "books",
+        "main",
+        "student",
+        "students"
+    ],
+    "java.project.referencedLibraries": [
+        "c:\\Users\\princ\\Downloads\\mysql-connector-j-9.6.0\\mysql-connector-j-9.6.0\\mysql-connector-j-9.6.0.jar"
+    ]
+}
